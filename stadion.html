@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Stadion Infos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Screenshot (2).png">
+</head>
+<body>
+
+    <div id="loader">
+    <h2>Warten auf frische News...</h2>
+</div>
+
+    <h1>MHPArena Stuttgart</h1>
+
+    <img src="mhp.arena.jpg" class="stadion-img">
+
+    <p>Die MHPArena ist das Heimstadion des VfB Stuttgart.</p>
+    <p>Kapazität: über 60.000 Plätze</p>
+    <p>Die MHPArena ist das Heimstadion des VfB Stuttgart und gehört zu den bekanntesten Fußballstadien in Deutschland. Sie befindet sich in Stuttgart-Bad Cannstatt und ist seit vielen Jahrzehnten ein zentraler Ort für Fußballbegeisterte.
+
+Das Stadion wurde ursprünglich im Jahr 1933 eröffnet und im Laufe der Zeit mehrfach modernisiert und umgebaut. Besonders im Rahmen von internationalen Turnieren und zur Anpassung an moderne Standards wurde die Arena immer wieder erweitert und verbessert.
+
+Die MHPArena bietet heute Platz für über 60.000 Zuschauer und sorgt bei Heimspielen für eine beeindruckende Atmosphäre. Die Fans des VfB Stuttgart sind bekannt für ihre Leidenschaft und unterstützen ihr Team lautstark bei jedem Spiel.
+
+Ein besonderes Merkmal des Stadions ist die Nähe der Zuschauer zum Spielfeld. Dadurch entsteht eine intensive Stimmung, die sowohl für die Spieler als auch für die Fans ein besonderes Erlebnis ist.
+
+Neben Fußballspielen finden in der Arena auch andere Veranstaltungen statt, darunter Konzerte und Events. Dadurch ist das Stadion nicht nur sportlich, sondern auch kulturell von großer Bedeutung für die Region Stuttgart.
+
+Die Infrastruktur rund um das Stadion ist gut ausgebaut. Es gibt zahlreiche Parkmöglichkeiten sowie eine sehr gute Anbindung an öffentliche Verkehrsmittel, wodurch Besucher das Stadion leicht erreichen können.
+
+Die MHPArena wurde im Laufe der Jahre mehrfach umbenannt, ist aber unter ihrem aktuellen Namen weit bekannt. Trotz der Namensänderungen bleibt sie für viele Fans einfach „das Stadion des VfB“.
+
+Auch für internationale Spiele war die Arena bereits Gastgeber, beispielsweise im Rahmen von Welt- und Europameisterschaften. Dadurch hat sie auch weltweit an Bekanntheit gewonnen.
+
+Die Atmosphäre bei Flutlichtspielen ist besonders beeindruckend, da die Kombination aus Licht, Gesängen und Stimmung eine einzigartige Kulisse schafft.
+
+Viele Fans verbinden mit der MHPArena unvergessliche Momente, sei es ein wichtiges Tor, ein Derby oder ein entscheidendes Spiel in einer Saison.
+
+Insgesamt ist die MHPArena nicht nur ein Stadion, sondern ein wichtiger Teil der Identität des Vereins und der Stadt Stuttgart. Sie steht für Tradition, Emotionen und Fußballkultur auf hohem Niveau.</p>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("darkMode", "enabled");
+    } else {
+        localStorage.setItem("darkMode", "disabled");
+    }
+}
+
+// Beim Laden prüfen
+window.addEventListener("load", () => {
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+    }
+});
+</script>
+
+<script>
+window.addEventListener("load", function() {
+    document.getElementById("loader").style.display = "none";
+});
+</script>
+
+</body>
+</html>
+
+<a href="index.html" class="back-button">⬅ Zurück zur Startseite</a>
